@@ -148,7 +148,7 @@ eval("$(document).ready(function () {\r\n    $('.parallax').parallax();\r\n});\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function () {\r\n    $('.slider').slick({\r\n        slidesToShow: 1,\r\n        autoplaySpeed: 5000,\r\n        speed: 700,\r\n        adaptiveHeight: true,\r\n        appendArrows: $('.testimonials__arrows'),\r\n        prevArrow: '.arrow-left',\r\n        nextArrow: '.arrow-right',\r\n        draggable: false,\r\n    });\r\n})\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
+eval("$(document).ready(function () {\r\n    setTimeout(function () {\r\n        $('.slider').slick({\r\n            slidesToShow: 1,\r\n            autoplaySpeed: 5000,\r\n            speed: 700,\r\n            adaptiveHeight: true,\r\n            appendArrows: $('.testimonials__arrows'),\r\n            prevArrow: '.arrow-left',\r\n            nextArrow: '.arrow-right',\r\n            draggable: false,\r\n        });\r\n    }, 600)\r\n})\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
 
 /***/ }),
 
@@ -170,7 +170,7 @@ eval("function testWebP(callback) {\r\n\r\n    var webP = new Image();\r\n    we
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function () {\r\n\r\n\r\n    //Функции\r\n    if ($('.anim-items').length > 0) {\r\n        $(window).on('scroll', animOnScroll);\r\n\r\n        function animOnScroll() {\r\n            $('.anim-items').each(function (index) {\r\n                let animHeight = $(this).innerHeight();\r\n                let animOffset = $(this).offset().top;\r\n                const animStart = 3;\r\n\r\n                let animPoint = $(window).innerHeight() - animHeight / animStart;\r\n\r\n                if (($(window).scrollTop() > animOffset - animPoint) && $(window).scrollTop() < (animOffset + animHeight)) {\r\n                    $(this).addClass('animate');\r\n                }\r\n                else {\r\n                    if ($(this).hasClass('no-hide')) {\r\n                        $(this).removeClass('animate');\r\n                    }\r\n                }\r\n            });\r\n        }\r\n\r\n        setTimeout(function () {\r\n            animOnScroll();\r\n        }, 300)\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/assets/js/wow.js?");
+eval("$(document).ready(function () {\r\n    //Функции\r\n    if ($('.anim-items').length > 0) {\r\n        $(window).on('scroll', animOnScroll);\r\n\r\n        function animOnScroll() {\r\n            $('.anim-items').each(function (index) {\r\n                let animHeight = $(this).innerHeight();\r\n                let animOffset = $(this).offset().top;\r\n                const animStart = 3;\r\n\r\n                let animPoint = $(window).innerHeight() - animHeight / animStart;\r\n\r\n                if (($(window).scrollTop() > animOffset - animPoint) && $(window).scrollTop() < (animOffset + animHeight)) {\r\n                    $(this).addClass('animate');\r\n                }\r\n                else {\r\n                    if ($(this).hasClass('no-hide')) {\r\n                        $(this).removeClass('animate');\r\n                    }\r\n                }\r\n            });\r\n        }\r\n\r\n        setTimeout(function () {\r\n            animOnScroll();\r\n        }, 300)\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/assets/js/wow.js?");
 
 /***/ }),
 
