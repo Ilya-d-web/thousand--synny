@@ -480,6 +480,11 @@ body {
     opacity: 1;
     transform: translateX(0); }
 
+@media (max-width: 767.98px) {
+  .begin .anim-show--left {
+    opacity: 1;
+    transform: translateX(0); } }
+
 .anim-show--up {
   transform: translateY(100%); }
 
